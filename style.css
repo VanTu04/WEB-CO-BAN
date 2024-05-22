@@ -22,6 +22,19 @@ a{
     --bg-color: #ffffff;
     --gray-color: #afa3a3;
     --tuong-color: rgb(214, 233, 178);
+
+
+    --color-orange: hsl(100, 56%, 58%);
+    --color-green: hsl(120, 100%, 30%);
+    --color-yellow: hsl(50, 100%, 50%);
+    --color-red: hsl(0, 100%, 50%);
+    --color-purple: hsl(270, 100%, 50%);
+    --color-pink: hsl(330, 100%, 50%);
+    --color-yellow: #FFD700;
+    --color-dark-green: #006400;
+    --color-bright-green: #7FFF00;
+    --color-bright-blue: #00BFFF;
+    --color-bright-purple: #9370DB;
 }
 body{
     color: var(--text-color);
@@ -42,7 +55,7 @@ img{
     background-color: var(--bg-color);
     box-shadow: 0 10px 12px var(--gray-color);
     padding: 20px 100px;
-    transition: 0.65s;
+    transition: all 0.65s;
 }
 
 .logo i{
@@ -64,10 +77,11 @@ img{
     position: relative;
     padding: 8px;
 }
+
 .navbar li:hover{
     background-color: var(--green-color);
     border-radius: 30px;
-    color: var(--bg-color);
+
 }
 .navbar>li:hover>.sub-menu{
     display: block;
@@ -75,89 +89,153 @@ img{
 .sub-menu{
     display: none;
     position: absolute;
-    width: 300px;
-    top: 37px;
+    width: 230px;
+    top: 30px;
     background-color: var(--tuong-color);
     border-radius: 10px;
+    transition: all 0.5;
 }
 .sub-menu>li{
-    margin: 10px;
+    padding: 10px;
 }
 
-
-.profile{
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-    color: var(--orange-color);
+#button-36 {
+    background-color: #d3f1e2;
+    border-radius: 8px;
+    color: var(--bg-color);
     cursor: pointer;
+    height: 32px;
+    padding: 0 8px;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+}
+#button-36:hover a{
+    color: var(--bg-color);
 }
 
-.home{
-    margin-top: 100px;
-    overflow: hidden;
+#button-36:hover {
+    background-color:var(--color-bright-green);
+    box-shadow: rgba(25, 204, 129, 0.5) 0 1px 30px;
+    transition-duration: .1s;
 }
-.swiper-slide{
-    display: none;
-}
-#container{
+
+
+
+.slide-show{
+    max-width: 100%;
     position: relative;
-    width: 100%;
-    min-height: 500px;
+    top: 105px;
+    background-image: url(./img/bg-nen.avif);
+}
+.slide{
     display: flex;
-    align-items: center;
-    background: url(./img/bg-nen.avif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
+    gap: 100px;
+    margin: 0 150px;
 }
-
-#container img{
-    width: 700px;
-    height: 400px;
-    position: absolute;
-    right: 80px;
-    border-radius: 30px;
-}
-
-.home-text{
-    padding: 0 100px;
+.textcontent{
+    flex: 0.6;
     display: flex;
     flex-direction: column;
-    justify-content:center;
-    gap: 20px;
-}
-.home-text h1{
-    max-width: 300px;
-    font-size: 40px;
-    font-weight: 700;
-}
-.home-text p{
-    max-width: 400px;
-}
-
-button{
-    border-radius: 30px;
-    padding: 10px;
-    display: flex;
+    gap: 30px;
     align-items: center;
     justify-content: center;
-    width: 100px;
-    height: 30px;
-    background-color: var(--green-color);
-    transition: 0.5s;
+    
 }
-button:hover{
-    background-color: var(--light-green-color);
-    transition: all ease-in-out;
+.imgcontent{
+    flex: 0.4;
+    height: 500px;
+    width: 700px;
+    border-radius: 20%;
 }
+.textcontent h1{
+    text-transform: uppercase;
+    font-size: 30px;
+
+}
+
+
+.button-24 {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: var(--bg-color);
+background-color: var(--gray-color);
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+}
+
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+background-color: var(--text-color);
+}
+
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+  
+.slide-show{
+    position: relative;
+    width: 100%;
+    top: 105px;
+    overflow: hidden;
+    margin: auto;
+}
+.imgcontent{
+    width: 100%;
+    height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 .categories{
     margin: 80px;
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px,auto));
+    grid-template-columns: repeat(3, 1fr);
     gap: 100px;
+    position: relative;
+    top: 50px;
 }
 .cate{
     display: flex;
@@ -169,6 +247,7 @@ button:hover{
     transition: background-size 0.5s;
     color: var(--bg-color);
     border: 2px solid var(--green-color);
+    position: relative;
 }
 .cate:hover{
     transform: scale(1.02);
@@ -178,34 +257,19 @@ button:hover{
     font-size: 26px;
     font-weight: 600;
 }
-.item-1{
-    background: url(./img/fruit1.avif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.item-2{
-    background: url(./img/fruit1.avif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.item-3{
-    background: url(./img/fruit1.avif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.solid{
+.text-cate{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    max-width: 1220px;
-    width: 100%;
-    height: 3px;
-    background-color: var(--gray-color);
+    justify-self: center;
+    align-items: center;
+    position: absolute;
+    color: var(--color-dark-green);
 }
+.cate img{
+    width: 90%;
+    height: 90%;
+}
+
 .products-2{
     margin: 100px 0;
     background-color: var(--tuong-color);
@@ -380,7 +444,7 @@ button:hover{
 }
 .customers-container .box:hover{
     transform: translateY(10px);
-    transition: 0.2s all ease;
+    transition:  all 0.2s ease;
 }
 .review-profile{
     display: flex;

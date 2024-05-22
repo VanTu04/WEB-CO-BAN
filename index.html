@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -15,7 +14,6 @@
 </head>
 
 <body>
-
     <header class="header">
         <a href="#" class="logo"><i class='bx bx-basket'></i>GROUP 3</a>
 
@@ -27,9 +25,9 @@
             <li>
                 <a href="#">Sản phẩm</a>
                 <ul class="sub-menu">
-                    <li><a href="#">Nước ép</a></li>
-                    <li><a href="#">Trái cây nhập khẩu</a></li>
-                    <li><a href="#">Trái cây nội địa</a></li>
+                    <li><a href="Nuocep.html">Nước ép</a></li>
+                    <li><a href="Traicaynhapkhau.html">Trái cây nhập khẩu</a></li>
+                    <li><a href="Traicaynoidia.html">Trái cây nội địa</a></li>
                     <li><a href="#">Các loại hạt dinh dưỡng</a></li>
                     <li><a href="#">Các loại rau củ quả Oragnic</a></li>
                     <li><a href="#">Sản phẩm khác</a></li>
@@ -38,60 +36,64 @@
             <li><a href="#">Về chúng tôi</a></li>
             <li><a href="#">Đánh giá</a></li>
         </ul>
-        <div class="profile">
-            <a href="#"><i class='bx bx-user-circle'></i></a>
-            <span>Account</span>
+        <button id="button-36"><a href="dangnhap.html">ĐĂNG NHẬP</a></button>
+    </header>     
+    
+    <section class="slide-show">
+        <div class="slide">
+            <div class="textcontent">
+                <h1>Hoa quả tươi </h1>
+                <p>Tốt cho sức khỏe!</p>
+                <button class="button-24">Mua ngay</button>
+            </div>
+            <img class="imgcontent" src="./img/bg-1.jpg">
         </div>
-    </header>
-
-    <section class="home swipper" id="home">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" id="container">
-                <div class="home-text">
-                    <h1>RAU CỦ QUẢ TƯƠI NGON</h1>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <button>Mua ngay</button>  
-                </div>
-                <img src="./img/bg-1.jpg" alt="">
+        <div class="slide">
+            <div class="textcontent">
+                <h1>Hoa quả tươi </h1>
+                <p>Thực phẩm sạch.</p>
+                <button class="button-24">Mua ngay</button>
             </div>
-            
-            <div class="swiper-slide" id="container">
-                <div class="home-text">
-                    <h1>RAU CỦ QUẢ TƯƠI NGON</h1>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <button>Mua ngay</button>  
-                </div>
-                <img src="./img/bg-2.jpg" alt="">
-            </div>
-            <div class="swiper-slide" id="container">
-                <div class="home-text">
-                    <h1>RAU CỦ QUẢ TƯƠI NGON</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ea doloribus repudiandae quibusdam
-                        voluptates non eum perferendis aut.</p>
-                    <button>Mua ngay</button>  
-                </div>
-                <img src="./img/bg-3.jpg" alt="">
-            </div>
-            
+            <img class="imgcontent" src="./img/bg-2.jpg">
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+        <div class="slide">
+            <div class="textcontent">
+                <h1>Hoa quả tươi </h1>
+                <p>Nhiều chất dinh dưỡng.</p>
+                <button class="button-24">Mua ngay</button>
+            </div>
+            <img class="imgcontent" src="./img/bg-3.jpg">
+        </div>
+        <button class="prev" onclick="plusDivs(-1)">&#10094</button>
+        <button class="next" onclick="plusDivs(+1)">&#10095</button>
     </section>
+    
+
     <section class="categories">
         <div class="cate item-1">
-            <h2>Rau củ tươi</h2>
-            <p>Được xác định rõ ràng</p>
+            <div class="text-cate">
+                <h2>Rau củ tươi</h2>
+                <p>Được xác định rõ ràng</p>
+            </div>
+            <img src="./img/fruit-1.jpg" alt="">
         </div>
-        <div class="cate item-2">
-            <h2>Thực phẩm sạch</h2>
-            <p>Quy trình sản xuất kín</p>
+        <div class="cate item-1">
+            <div class="text-cate">
+                <h2>Thực phẩm sạch</h2>
+                <p>Quy trình sản xuất kín</p>
+            </div>
+            <img src="./img/fruit-1.jpg" alt="">
         </div>
-        <div class="cate item-3">
-            <h2>Trái cây tươi</h2>
+        <div class="cate item-1">
+            <div class="text-cate">
+                <h2>Trái cây tươi</h2>
             <p>Nhập khẩu & Trong nước</p>
+            </div>
+            <img src="./img/fruit-1.jpg" alt="">
         </div>
     </section>
+
+    
     <section class="products-2">
         <div class="heading">
             <div class="heading-text">
@@ -248,7 +250,6 @@
     </footer>
 
     
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 
