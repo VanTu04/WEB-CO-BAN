@@ -4,8 +4,8 @@
     font-weight: 400;
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
     list-style-type: none;
+    box-sizing: border-box;
     text-decoration: none;
     scroll-padding-top: 2rem;
     scroll-behavior: smooth;
@@ -50,18 +50,78 @@ img{
     position: fixed;
     z-index: 100;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: var(--bg-color);
     box-shadow: 0 10px 12px var(--gray-color);
-    padding: 20px 100px;
-    transition: all 0.65s;
+    transition: 0.65s;
 }
 
-.logo i{
-    color: var(--orange-color);
-    width: 30px;
-    height: 30px;
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--green-color);
+    color: var(--bg-color);
+    padding: 5px 70px;
+    width: 100%;
+}
+
+.inf{
+    display: flex;
+    gap: 20px;
+}
+.inf li a{
+    color: var(--bg-color);
+}
+.inf li:hover a{
+    color: var(--light-orange-color);
+}
+
+.header-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    width: 100%;
+    height: 70px;
+}
+
+.bx-basket{
+    font-size: 30px;
+}
+
+.cart{
+    position: relative;
+    cursor: pointer;
+}
+.cart .bx-cart{
+    font-size: 30px;
+}
+.cart span{
+    position: absolute;
+    top: 0px;
+    right: -10px;
+    border-radius: 50%;
+    background-color: var(--color-red);
+    color: var(--bg-color);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--green-color);
+}
+.logo span{
+    font-size: 20px;
 }
 
 .nav-ip{
@@ -99,33 +159,10 @@ img{
     padding: 10px;
 }
 
-#button-36 {
-    background-color: #d3f1e2;
-    border-radius: 8px;
-    color: var(--bg-color);
-    cursor: pointer;
-    height: 32px;
-    padding: 0 8px;
-    text-align: center;
-    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-    transition: all .5s;
-}
-#button-36:hover a{
-    color: var(--bg-color);
-}
-
-#button-36:hover {
-    background-color:var(--color-bright-green);
-    box-shadow: rgba(25, 204, 129, 0.5) 0 1px 30px;
-    transition-duration: .1s;
-}
-
-
-
 .slide-show{
     max-width: 100%;
     position: relative;
-    top: 105px;
+    top: 120px;
     background-image: url(./img/bg-nen.avif);
 }
 .slide{
@@ -329,14 +366,25 @@ animation-duration: 1.5s;
     border: 2px solid var(--green-color);
     background-color: var(--bg-color);
     transition: all 0.5s;
+    width: 290px;
+    height: 350px;
+    flex: 1;
 }
 
 .box img{
     width: 100%;
-    height: 200px;
-    object-fit: contain;
-    object-position: center;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
+
+.price{
+    display: flex;
+    margin-bottom: 10px;
+}
+
 .box h2{
     margin: 16px;
     font-size: 25px;
@@ -347,11 +395,12 @@ animation-duration: 1.5s;
     gap: 10px;
     margin-bottom: 10px;
 }
-.box h3 span{
+.price p{
     text-decoration: line-through;
     color: var(--gray-color);
+    margin-right: 10px;
 }
-.box .btn{
+.box .pushcart{
     display: flex;
     gap: 5px;
     padding: 5px;
@@ -362,14 +411,8 @@ animation-duration: 1.5s;
     cursor: pointer;
     position: relative;
 }
-.box .btn:hover{
+.box .pushcart:hover{
     box-shadow: 0 10px 12px var(--light-green-color);
-}
-.box i{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
 }
 
 .box:hover{
@@ -378,7 +421,7 @@ animation-duration: 1.5s;
 
 .about{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(13rem, auto));
+    grid-template-columns: repeat(auto-fit, minmax(13rem,500px));
     align-items: center;
     gap: 30px;
     margin: 0 100px;
@@ -387,8 +430,7 @@ animation-duration: 1.5s;
 
 .about img{
     width: 100%;
-    height: 300px;
-    border-radius: 100%;
+    border-radius: 5px;
     background-size: contain;
     object-fit: cover;
     object-position: center;
@@ -401,6 +443,7 @@ animation-duration: 1.5s;
 }
 .about-text p{
     margin: 16px 0;
+    max-width: 700px;
 }
 .about-text a{
     display: flex;
@@ -419,70 +462,39 @@ animation-duration: 1.5s;
     background-color: var(--bg-color);
 }
 
-.customers{
-    margin: 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-    align-items: center;
-    justify-content: center;
-}
-.customers h1{
-    text-transform: uppercase;
-    font-size: 40px;
-}
-.customers-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    gap: 25px;
-    margin-top: 20px;
-}
-.customers-container .box{
-    padding: 20px;
-    box-shadow: 1px 2px 11px 3px var(--gray-color);
-    border-radius: 16px;
-}
-.customers-container .box:hover{
-    transform: translateY(10px);
-    transition:  all 0.2s ease;
-}
-.review-profile{
-    display: flex;
-    align-items: center;
-    margin-top: 16px;
-    gap: 10px;
-}
-.review-profile img{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
-}
-
 .footer{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
     gap: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     color: var(--text-color);
-    background-color: var(--gray-color);
+    background-image: linear-gradient(144deg,#d0ebdd, #7fa5a0 50%,#cea6d3);
 }
 .footer-box{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
-    gap: 30px;
-    margin: 0 30px 10px 30px;
+    display: flex;
+    gap: 40px;
+    margin: 0 140px;
 }
 .footer-logo{
     margin: 30px 0;
+    flex: 1;
 }
 .footer-logo p{
     margin-top: 30px;
 }
-
+.sosials{
+    flex: 1;
+}
+.connect{
+    flex:2;
+}
+.about-me{
+    flex: 1;
+}
 .ft{
     display: flex;
     flex-direction: column;

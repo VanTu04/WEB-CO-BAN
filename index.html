@@ -4,39 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Web Fruits</title>
 </head>
 
 <body>
     <header class="header">
-        <a href="#" class="logo"><i class='bx bx-basket'></i>GROUP 3</a>
-
-        <a href="#" class="nav-ip"><i class='bx bx-menu'></i></a>
-
-        <ul class="navbar">
-            <li><a class="selected" href="index.html">Trang chủ</a></li>
-            <li><a href="#">Categories</a></li>
-            <li>
-                <a href="#">Sản phẩm</a>
-                <ul class="sub-menu">
-                    <li><a href="Nuocep.html">Nước ép</a></li>
-                    <li><a href="Traicaynhapkhau.html">Trái cây nhập khẩu</a></li>
-                    <li><a href="Traicaynoidia.html">Trái cây nội địa</a></li>
-                    <li><a href="#">Các loại hạt dinh dưỡng</a></li>
-                    <li><a href="#">Các loại rau củ quả Oragnic</a></li>
-                    <li><a href="#">Sản phẩm khác</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Về chúng tôi</a></li>
-            <li><a href="#">Đánh giá</a></li>
-        </ul>
-        <button id="button-36"><a href="dangnhap.html">ĐĂNG NHẬP</a></button>
+        <div class="header-top">
+            <p>Chuyên cung cấp thực phẩm sạch | Fruits</p>
+            <ul class="inf">
+                <li>8:00 - 22:00</li>
+                <li><a href="dangnhap.html">Tài khoản</a></li>
+                <li><a href="#">Thanh toán</a></li>
+            </ul>
+        </div>
+        <div class="header-bottom">
+            <a class="logo" href="index.html">
+                <i class='bx bx-basket'></i>
+                <span>GROUP 3</span>
+            </a>
+            <a href="#" class="nav-ip"><i class='bx bx-menu'></i></a>
+    
+            <ul class="navbar">
+                <li><a class="selected" href="index.html">Trang chủ</a></li>
+                <li>
+                    <a href="#">Sản phẩm <i class='bx bx-chevron-down'></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="Nuocep.html">Nước ép</a></li>
+                        <li><a href="Traicaynhapkhau.html">Trái cây nhập khẩu</a></li>
+                        <li><a href="Traicaynoidia.html">Trái cây nội địa</a></li>
+                        <li><a href="hatdinhduong.html">Các loại hạt dinh dưỡng</a></li>
+                        <li><a href="raucuqua.html">Các loại rau củ quả Oragnic</a></li>
+                        <li><a href="sanphamkhac.html">Sản phẩm khác</a></li>
+                    </ul>
+                </li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="tintuc.html">Tin tức</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+            <div class="cart">
+                <i class='bx bx-cart'></i>
+                <span>0</span>
+            </div>
+        </div>
     </header>     
     
     <section class="slide-show">
@@ -67,7 +80,6 @@
         <button class="prev" onclick="plusDivs(-1)">&#10094</button>
         <button class="next" onclick="plusDivs(+1)">&#10095</button>
     </section>
-    
 
     <section class="categories">
         <div class="cate item-1">
@@ -92,7 +104,6 @@
             <img src="./img/fruit-1.jpg" alt="">
         </div>
     </section>
-
     
     <section class="products-2">
         <div class="heading">
@@ -100,36 +111,48 @@
                 <h1>Trái cây nhập khẩu</h1>
                 <p>Là nhà cung cấp thực phẩm tươi sạch hàng đầu khu vực phía nam</p>
             </div>
-            <a id="btn-0" href="#!">Xem thêm <i class='bx bx-right-arrow-alt'></i></a>
+            <a id="btn-0" href="Traicaynhapkhau.html">Xem thêm <i class='bx bx-right-arrow-alt'></i></a>
         </div>
         <div class="products-2-container">
             <div class="box">
                 <img src="./img/fruit-5.jpg" alt="">
                 <h2>Vải nhập khẩu</h2>
-                <h3><span>90.000₫</span>60.000₫</h3>
-                <span class="btn">Mua ngay</span>
-                <i class='bx bx-heart'></i>
+                <div class="price">
+                    <p>90.000đ</p>
+                    <span class="getprice">60.000</span><sup>đ</sup>
+                </div>
+                <button class="pushcart">Thêm vào giỏ hàng</button>
+                
             </div>
             <div class="box">
                 <img src="./img/fruit-6.jpg" alt="">
                 <h2>Vải nhập khẩu</h2>
-                <h3><span>90.000₫</span>60.000₫</h3>
-                <span class="btn">Mua ngay</span>
-                <i class='bx bx-heart'></i>
+                <div class="price">
+                    <p>90.000đ</p>
+                    <span class="getprice">60.000</span><sup>đ</sup>
+                </div>
+                <button class="pushcart">Thêm vào giỏ hàng</button>
+                
             </div>
             <div class="box">
                 <img src="./img/fruit-7.jpg" alt="">
                 <h2>Vải nhập khẩu</h2>
-                <h3><span>90.000₫</span>60.000₫</h3>
-                <span class="btn">Mua ngay</span>
-                <i class='bx bx-heart'></i>
+                <div class="price">
+                    <p>90.000đ</p>
+                    <span class="getprice">60.000</span><sup>đ</sup>
+                </div>
+                <button class="pushcart">Thêm vào giỏ hàng</button>
+                
             </div>
             <div class="box">
                 <img src="./img/fruit-8.jpg" alt="">
                 <h2>Vải nhập khẩu</h2>
-                <h3><span>90.000₫</span>60.000₫</h3>
-                <span class="btn">Mua ngay</span>
-                <i class='bx bx-heart'></i>
+                <div class="price">
+                    <p>90.000đ</p>
+                    <span class="getprice">60.000</span><sup>đ</sup>
+                </div>
+                <button class="pushcart">Thêm vào giỏ hàng</button>
+                
             </div>
         </div>
     </section>
@@ -139,116 +162,95 @@
                 <h1>Trái cây nội địa</h1>
                 <p>Có hàng ngàn mẫu hoa quả tươi đủ loại cho bạn chọn!</p>
             </div>
-            <a id="btn-0" href="#!">Xem thêm <i class='bx bx-right-arrow-alt'></i></a>
+            <a id="btn-0" href="Traicaynoidia.html">Xem thêm <i class='bx bx-right-arrow-alt'></i></a>
         </div>
         <div class="products-2-container">
             <div class="box">
                 <img src="./img/fruit-5.jpg" alt="">
                 <h2>Vải nhập khẩu</h2>
-                <h3><span>90.000₫</span>60.000₫</h3>
-                <button class="btn">Mua ngay</button>
-                <i class='bx bx-heart'></i>
+                <div class="price">
+                    <p>90.000đ</p>
+                    <span class="getprice">60.000</span><sup>đ</sup>
+                </div>
+            <button class="pushcart">Thêm vào giỏ hàng</button>
+                
             </div>
             <div class="box">
                 <img src="./img/fruit-6.jpg" alt="">
                 <h2>Vải nhập khẩu</h2>
-                <h3><span>90.000₫</span>60.000₫</h3>
-                <button class="btn">Mua ngay</button>
-                <i class='bx bx-heart'></i>
+                <div class="price">
+                    <p>90.000đ</p>
+                    <span class="getprice">60.000</span><sup>đ</sup>
+                </div>
+            <button class="pushcart">Thêm vào giỏ hàng</button>
+                
             </div>
             <div class="box">
                 <img src="./img/fruit-7.jpg" alt="">
                 <h2>Vải nhập khẩu</h2>
-                <h3><span>90.000₫</span>60.000₫</h3>
-                <button class="btn">Mua ngay</button>
-                <i class='bx bx-heart'></i>
+                <div class="price">
+                    <p>90.000đ</p>
+                    <span class="getprice">60.000</span><sup>đ</sup>
+                </div>
+            <button class="pushcart">Thêm vào giỏ hàng</button>
+                
             </div>
             <div class="box">
                 <img src="./img/fruit-8.jpg" alt="">
                 <h2>Vải nhập khẩu</h2>
-                <h3><span>90.000₫</span>60.000₫</h3>
-                <button class="btn">Mua ngay</button>
-                <i class='bx bx-heart'></i>
+                <div class="price">
+                    <p>90.000đ</p>
+                    <span class="getprice">60.000</span><sup>đ</sup>
+                </div>
+            <button class="pushcart">Thêm vào giỏ hàng</button>
+                
             </div>
         </div>
     </section>
 
     <section class="about">
-        <img src="./img/fruit-9.jpg" alt="">
+        <img src="./img/Nuocepduahau.jpg" alt="">
         <div class="about-text">
-            <span>Thông tin</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ab saepe fuga dignissimos aliquam id sed iste.</p>
-            <p>Ipsum quidem molestias earum, temporibus repellat corrupti. Consequatur, cumque eum ipsum dolorum officia optio? Labore cupiditate quos assumenda, magni ratione quidem totam?</p>
+            <span>Siêu ưu đãi của tháng</span>
+            <p>Nước ép dưa hấu của quán chúng tôi là lựa chọn hoàn hảo cho ngày nắng nóng, với dưa hấu tươi ngon được ép lấy nước, không chất bảo quản. Hương vị ngọt thanh tự nhiên kết hợp chút chanh tươi và bạc hà, tạo nên sự sảng khoái, mát lạnh. Đây là món bán chạy nhất, được yêu thích vì hương vị tuyệt vời và lợi ích sức khỏe như cung cấp vitamin, giải nhiệt và làm đẹp da. Thưởng thức ngay để cảm nhận sự tươi mát!</p>
             <a id="btn-1" href="#!">Xem thêm <i class='bx bx-right-arrow-alt'></i></a>
-        </div>
-    </section>
-
-    <section class="customers">
-        <h1>Đánh giá của khách hàng</h1>
-        <div class="customers-container">
-            <div class="box">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores consequatur libero voluptatum</p>
-                <div class="review-profile">
-                    <img src="./img/profile-1.png" alt="">
-                    <h3>Nguyen Van An</h3>
-                </div>
-            </div>
-            <div class="box">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores consequatur libero voluptatum</p>
-                <div class="review-profile">
-                    <img src="./img/profile-2.png" alt="">
-                    <h3>Nguyen Van B</h3>
-                </div>
-            </div>
-            <div class="box">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores consequatur libero voluptatum</p>
-                <div class="review-profile">
-                    <img src="./img/profile-1.png" alt="">
-                    <h3>Nguyen Van C</h3>
-                </div>
-            </div>
-            <div class="box">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores consequatur libero voluptatum</p>
-                <div class="review-profile">
-                    <img src="./img/profile-1.png" alt="">
-                    <h3>Nguyen Van C</h3>
-                </div>
-            </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="footer-box">
             <div class="footer-logo">
-                <a href="#!" class="logo">NHOM 3</a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, perferendis quos. Sunt voluptatem obcaecati amet harum, officiis nulla distinctio mollitia eius ex ipsum expedita deserunt natus? Exercitationem quaerat sunt nisi!</p>
+                <a class="logo" href="index.html">
+                <i class='bx bx-basket'></i>
+                <span>GROUP 3</span>
+            </a>
+                <p>Chuyên cung cấp các loại hoa quả nhập khẩu, nội địa và các loại thực phẩm từ thiên nhiên.</p>
             </div>   
             <div class="socials ft">
                 <h1>Liên hệ</h1>
-                <a href="#!"><i class='bx bxl-facebook-square'></i>fb.com.vn</a>
-                <a href="#!"><i class='bx bxl-instagram'></i>Instagram</a>
-                <a href="#!"><i class='bx bxl-twitter'></i>Twitter</a>
-                <a href="#!"><i class='bx bxl-linkedin-square'></i>Linkedin</a>
+                <a href="#!"><i class="bx bxl-facebook-square"></i>fb.com.vn</a>
+                <a href="#!"><i class="bx bxl-instagram"></i>Instagram</a>
+                <a href="#!"><i class="bx bxl-twitter"></i>Twitter</a>
+                <a href="#!"><i class="bx bxl-linkedin-square"></i>Linkedin</a>
             </div>
             <div class="connect ft">
                 <h1>Liên hệ</h1>
-                <a href="#!">Kỹ thuật trồng rau sạch trong chậu xốp tại nhà đơn giản</a>
-                <a href="#!">Eat Clean – bí kíp để có thân hình xinh như mơ của cô nàng 9x</a>
-                <a href="#!">Lấy lại vòng eo con kiến nhờ công thức đơn giản từ củ đậu và rau cải</a>
-                <a href="#!">KM: Tháng giải phóng mỡ thừa, da xấu, độc tố trong cơ thể</a>
+                <a href="kithuattrongrau1.html">Kỹ thuật trồng rau sạch trong chậu xốp tại nhà đơn giản</a>
+                <a href="kithuattrongrau2.html">Eat Clean – bí kíp để có thân hình xinh như mơ của cô nàng 9x</a>
+                <a href="kithuattrongrau3.html">Lấy lại vòng eo con kiến nhờ công thức đơn giản từ củ đậu và rau cải</a>
+                <a href="kithuattrongrau4.html">KM: Tháng giải phóng mỡ thừa, da xấu, độc tố trong cơ thể</a>
             </div>
             <div class="about-me ft">
                 <h1>Về chúng tôi</h1>
-                <a href="#!">Giới thiệu</a>
+                <a href="gioithieu.html">Giới thiệu</a>
                 <a href="#!">Lĩnh vực hoạt động</a>
-                <a href="#!">Chính sách chất lượng</a>
+                <a href="chinhsach.html">Chính sách vận chuyển</a>
                 <a href="#!">Triết lí kinh doanh</a>
                 <a href="#!">Năng lực - cơ sở vật chất</a>
             </div>
         </div>
         <p>Copyright 2024 ©, All rights reserved.</p>
     </footer>
-
     
     <script src="main.js"></script>
 </body>

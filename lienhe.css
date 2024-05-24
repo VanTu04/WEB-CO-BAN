@@ -1,0 +1,109 @@
+*{
+font-family: "Open Sans", sans-serif;
+font-size: 16px;
+font-weight: 400;
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+list-style-type: none;
+text-decoration: none;
+scroll-padding-top: 2rem;
+scroll-behavior: smooth;
+}
+a{
+color: var(--text-color);
+}
+:root{
+--text-color: rgb(2, 17, 12);
+--green-color: #3cb815;
+--light-green-color: #14eb6675;
+--orange-color: #ff7e00;
+--light-orange-color: #f77f08b4;
+--bg-color: #ffffff;
+--gray-color: #afa3a3;
+--tuong-color: rgb(214, 233, 178);
+}
+body{
+color: var(--text-color);
+}
+img{
+width: 100%;
+}
+
+.bando{
+    margin-top: 90px;
+}
+/* lien he */
+.lienhe{
+    margin-top: 100px;
+    display: flex;
+    margin-left: 150px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    justify-content: space-between;
+}
+.lienhe_body{
+    margin-right: 30px;
+}
+.tieude{
+    font-size: 25px;
+    color: rgb(128,0,0);
+    margin-bottom: 10px;
+    
+}
+.tieude2{
+    font-size: 20px;
+    color:black ;
+    margin-bottom: 10px;
+}
+.unsun_one{
+    margin-bottom: 10px;
+    list-style-type: circle;
+    margin-left: 15px;
+}
+.fa_icon{
+    font-size: 25px;
+    margin-left: 2px;
+}
+.lienhetuvan{
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid var(--green-color);
+    box-shadow: 0px 0px 3px 3px var(--green-color);
+}
+.lienhetuvanz{
+    position: relative;
+    margin: 15px;
+}
+.lienhetuvan1{
+    margin-top: 10px;
+}
+.lienhetuvan1_tieude{
+    color: rgb(128,0,0);
+    font-size: 26px;
+    margin: 20px 30px;
+    font-weight: 400;
+}
+.lienhetuvan1_input{
+    width: 100%;
+    height: 25px;   
+    border-radius: 3px; 
+    outline: none;
+    border: 1px solid var(--green-color);
+    padding: 5px;
+    font-size: 15px;
+    background-color:#f8f2ecf9;
+}
+.lienhetuvan1_input_2{
+    padding-top: 15px;
+    padding-bottom: 70px;
+}
+.lienhetuvan1_gui{
+    width: 100%;
+    height:25px;
+    color:var(--bg-color) ;
+    border-radius: 12px;
+    background-color: var(--green-color);
+    border: 1px solid var(--green-color);
+    cursor: pointer;
+}

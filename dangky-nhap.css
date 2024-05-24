@@ -24,7 +24,7 @@ body{
     position: relative;
     width: 500px;
     height: 560px;
-    border: 2px solid rgb(51, 84, 156);
+    border: 2px solid #3cb815;
     border-radius: 20px;
     backdrop-filter: blur(15px);
     display: flex;
@@ -32,7 +32,7 @@ body{
     align-items: center;
 }
 .form-box h2{
-    color: #3363c9;
+    color: hsl(120, 100%, 30%);
     text-align: center;
     font-size: 32px;
 }
@@ -44,7 +44,7 @@ body{
 }
 i{
     position: absolute;
-    color: #5468ff;
+    color: #7FFF00;
     right: 5px;
     top: 13px;
 }
@@ -52,19 +52,19 @@ i{
     width: 100%;
     height: 46px;
     background: transparent;
-    border: 2px solid #3363c9;
+    border: 2px solid hsl(120, 100%, 30%);
     outline: none;
     padding: 0 20px 0 5px;
-    color: #3363c9;
+    color: hsl(120, 100%, 30%);
     font-size: 16px;
 }
 input::placeholder{
-    color: #5572b1;
+    color: #3cb815;
 }
 
 .btn{
   align-items: center;
-  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #7FFF00 100%);
   border: 0;
   border-radius: 6px;
   box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
@@ -86,14 +86,14 @@ input::placeholder{
   font-size: 18px;
 }
 .btn:focus {
-  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  box-shadow: #0ae490 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #10a017 0 -3px 0 inset;
 }
 .btn:hover {
-  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #07cc21 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 .btn:active {
-  box-shadow: #3c4fe0 0 3px 7px inset;
+  box-shadow: #0c9976 0 3px 7px inset;
   transform: translateY(2px);
 }
 
@@ -103,7 +103,7 @@ input::placeholder{
 }
 
 .group a{
-    color: #3363c9;
+    color: hsl(120, 100%, 30%);
     position: relative;
     top: 20px;
     text-decoration: none;

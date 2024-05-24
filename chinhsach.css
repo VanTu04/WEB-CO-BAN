@@ -1,0 +1,53 @@
+*{
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0px;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+.container{
+    display: flex;
+    position: relative;
+    top: 200px;
+    margin: 0 100px;
+    max-width: 1440px;
+    gap: 30px;
+}
+.danh-muc{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    width: 100%;
+    gap: 20px;
+}
+.danh-muc li{
+    border-bottom: 2px solid #1111;
+    width: 200px;
+}
+.danh-muc li:hover a{
+    color: rgb(118, 206, 170);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.content h1{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.content h2{
+    font-size: 32px;
+}
+.content ul li, p{
+    margin: 10px 0;
+    line-height: 30px;
+}
+.footer{
+    top: 200px;
+}

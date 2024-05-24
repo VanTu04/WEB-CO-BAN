@@ -1,0 +1,281 @@
+*{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+
+a{
+    color: var(--text-color);
+}
+:root{
+    --text-color: rgb(2, 17, 12);
+    --green-color: #3cb815;
+    --light-green-color: #14eb6675;
+    --orange-color: #ff7e00;
+    --light-orange-color: #f77f08b4;
+    --bg-color: #ffffff;
+    --gray-color: #afa3a3;
+    --tuong-color: rgb(214, 233, 178);
+}
+body{
+    color: var(--text-color);
+}.img_tieude{
+    position: relative;
+    top: 40px;
+    margin: 50px 0px;
+    background-image: linear-gradient(0, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url(./img/blog-img-8.jpg);
+    background-size: cover;
+    padding-bottom:40px;
+    padding-top: 20px;
+}
+
+.item{
+    font-size: 10px;
+    color: var(--gray-color);
+    margin-left: 650px;
+    font-weight: 600;
+}
+.tieude{
+    font-size: 20px;
+    color: var(--green-color);
+    margin-left: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.item:hover{
+    color: var(--bg-color);
+}
+.gachchan{
+    height: 2px;
+    width: 25px;
+    background-color: rgba(214, 200, 200, 0.4);
+    margin-left: 680px;
+    margin-bottom: 20px;
+}
+.item1{
+    color: var(--gray-color);
+    margin-left:600px ;
+    font-size: 12px;
+}
+/* body giothieu */
+.body_gioithieu{
+    margin: 30px 150px;
+    display: flex;
+    margin-bottom: 50px;
+}
+.body_gioithieu_tieude{
+    width: 800px;
+    height: 1270px;
+    border: 1px solid var(--green-color);
+    margin-right: 20px;
+}
+.body_gioithieu_tieude_1{
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    padding:10px;
+}
+.body_gioithieu_tieude_2{
+    margin-top: 20px;
+    font-size: 17px;
+    padding:10px;
+    margin-bottom: 40px;
+}
+
+.body_gioithieu_tieude_3{
+    margin-top: 10px;
+    font-size: 17px;
+    padding:10px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.body_gioithieu_tieude_4{
+    margin-top: 10px;
+    font-size: 17px;
+    padding:10px;
+    margin-bottom: 10px;
+}
+
+.itemz{
+    margin:30px 20px ;
+    display: flex;
+    padding-left: 270px;
+    border-bottom: 1px solid var(--green-color);
+}
+.itemxahoi{
+    margin-right: 5px;
+    margin-bottom:5px ;
+}
+.fa-item{
+    font-size: 30px; 
+    margin-left:2px ;   
+    background-color: var(--bg-color);   
+}
+
+.fa-item1:hover{
+    color: blue;
+}   
+.fa-item2:hover{
+    color: rgb(0, 191, 255);
+}
+.fa-item3:hover{
+    color: black;
+}
+.fa-item4:hover{
+    color: crimson;
+}
+.fa-item5:hover{
+    color: crimson;
+}
+.fa-item6:hover{
+    color: rgb(0, 191, 255);
+}
+.linkz{
+    display: inline-flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--green-color);
+    border-top: 1px solid var(--green-color);
+    margin: 0px 20px;
+}
+.sosanh{
+    margin-right: 10px;
+}
+.sosanh2{
+    margin-left: 10px;
+}
+.link_tex{
+   
+    width: 339px;
+    margin:15px 20px;
+    margin-bottom: 0;
+    height: 60px;
+}
+.textner:hover{
+    color: deeppink;
+
+}.phanhoi{
+    margin-top: 30px;
+    width: 800px;
+    background-color:rgba(220,220,220,0.4);
+}
+.binhluan{
+    margin-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.binhluan1{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+.binhluan2{
+    margin-top: 20px;
+    font-size: 15px;
+}
+.binhluan3{
+    margin-top: 15px;
+    font-weight:600;
+    font-size: 13px;
+}
+.boxsize{
+    margin-top: 10px    ;
+    border: 0px;
+    width: 780px;
+    height: 100px;
+    outline: unset;
+}
+.boxsize:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.boxall{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+.boxthongtin{
+    margin-right: 10px;
+}
+.boxthongtinz{
+    margin-top: 10px;
+    border: 0px;
+    outline: unset;
+    height: 30px;
+}
+.boxthongtinz:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.nutphanhoi{
+    border: 0px;
+    background-color: #3cb815;
+    padding: 10px 10px;
+    color: var(--bg-color);
+    font-weight: 600;
+}
+.nutphanhoi:hover{
+    background-color:darkgreen ;
+}
+
+
+
+.body_gioithieu_img_one{
+    width: 220px;
+    border: 1px solid var(--green-color);
+    margin-top: 30px;
+}
+.baiviet{
+    font-size: 15px;
+    color: white;
+    background-color: var(--green-color);
+    margin: 0;
+    padding: 20px 0px ;
+    padding-left: 15px;
+}
+.body_gioithieu_img_one2{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0;
+    border-bottom: 1px solid var(--green-color) ;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+.body_gioithieu_img_one3{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+}
+.body_gioithieu_img_one4{
+    margin-left: 15px;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+.body_gioithieu_img_one4:hover{
+    color: var(--green-color) ;
+}
+.link{
+    margin:10px 0px 0px 10px;
+    text-decoration: none;
+}
+.link:hover{
+    color: var(--green-color);
+}
+
+
+
+
+

@@ -1,0 +1,81 @@
+
+*{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+.container-tintuc{
+    max-width: 1440px;
+    width: 80%;
+    position: relative;
+    top: 120px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.tintuc-head{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tintuc-head h1{
+    text-transform: uppercase;
+    color: rgb(216, 117, 133);
+    font-size: 32px;
+    max-width: 1440px;
+    width: 100%;
+}
+.tintuc-head p{
+    line-height: 24px;
+}
+.tintuc-body{
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    gap: 40px;
+}
+.tintuc-items{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.tintuc-body .tintuc-box img{
+    width: 290px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+.tintuc-box{
+    display: flex;
+    gap: 20px;
+}
+.tintuc-text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.tintuc-text h2{
+    font-size: 28px;
+    color: green;
+
+}
+.line{
+    width: 40px;
+    height: 2px;
+    background-color: #5555;
+}
+.tintuc-text p{
+    line-height: 24px;
+}
+.footer{
+    top: 200px;
+}
