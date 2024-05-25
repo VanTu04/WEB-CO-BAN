@@ -2,7 +2,7 @@ function kiemtra(){
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
     if(username == ""){
-        document.getElementById("result1").textContent = "Chưa nhập tên đăng nhập.";
+        document.getElementById("result1").textContent = "Chưa nhập Email.";
         return false;
     }
     else if(password == ""){
